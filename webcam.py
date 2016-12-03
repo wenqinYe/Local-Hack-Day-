@@ -3,9 +3,10 @@
 import cv2
 import sys
 
-cascPath = sys.argv[0]
-faceCascade = cv2.CascadeClassifier(cascPath)
 
+cascPath = "C:\Users\Pujan\Documents\GitHub\Local-Hack-Day-\haarcascade_frontalface_default.xml"
+faceCascade = cv2.CascadeClassifier(cascPath)
+print faceCascade
 video_capture = cv2.VideoCapture(1)
 
 while True:
